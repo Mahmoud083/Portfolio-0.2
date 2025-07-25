@@ -1,0 +1,196 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mahmoud’s portfolio — Computer Engineering undergrad & web developer" />
+  <title>Mahmoud’s Portfolio</title>
+  <link rel="icon" href="favicon.ico" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <button id="nav-toggle" aria-label="Toggle menu">☰</button>
+    <ul id="nav-menu">
+      <li><a href="#welcome-section">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+  </nav>
+
+  <main>
+    <!-- WELCOME -->
+    <section id="welcome-section" data-reveal>
+      <h1>Hey there, I’m Mahmoud</h1>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" data-reveal>
+      <h2>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M20 21v-2a4 4 0 0 0-3-3.87"></path>
+          <path d="M4 21v-2a4 4 0 0 1 3-3.87"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        About Me
+      </h2>
+      <img src="images/me.png" alt="Portrait of Mahmoud" loading="lazy" />
+      <p>
+        I’m a Computer Engineering undergrad at Medipol University who loves
+        crafting vibrant, interactive web experiences. When I’m not coding,
+        you’ll find me hitting the gym or exploring Istanbul.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" data-reveal>
+      <h2>Skills</h2>
+      <div class="skill">
+        <span>HTML &amp; CSS</span>
+        <div class="bar"><div style="--pct:90%"></div></div>
+      </div>
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="bar"><div style="--pct:80%"></div></div>
+      </div>
+      <div class="skill">
+        <span>React</span>
+        <div class="bar"><div style="--pct:70%"></div></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" data-reveal>
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-tile" data-reveal>
+          <img
+            src="images/smartfit.jpg"
+            alt="SmartFit Landing Page"
+            loading="lazy"
+          />
+          <h3>SmartFit Landing</h3>
+          <a href="#" target="_blank" rel="noopener" class="btn"
+            >Live Demo</a
+          >
+        </div>
+        <!-- Copy/paste this block for more projects -->
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" data-reveal>
+      <h2>Contact Me</h2>
+      <div class="contact-container">
+        <form action="#" method="POST">
+          <label>
+            <input type="text" name="name" placeholder="Your Name" required />
+          </label>
+          <label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </label>
+          <label>
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </label>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="social-links">
+      <!-- GitHub -->
+      <a
+        href="https://github.com/Mahmoud083"
+        target="_blank"
+        rel="noopener"
+        aria-label="GitHub"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12a12 12 0 008.205 11.385c.6.11.82-.26.82-.577
+            0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754-1.09-.745.083-.73.083-.73
+            1.205.085 1.84 1.235 1.84 1.235 1.07 1.835 2.807 1.305 3.492.998.108-.775.42-1.305.763-1.605-2.665-.305-5.467-1.335-5.467-5.93
+            0-1.31.47-2.38 1.235-3.22-.125-.305-.535-1.535.115-3.195 0 0 1.005-.322 3.3 1.23a11.5 11.5 0 016.005 0c2.28-1.552
+            3.285-1.23 3.285-1.23.655 1.66.245 2.89.12 3.195.77.84 1.23 1.91 1.23 3.22 0 4.61-2.807 5.62-5.48 5.915.43.37.815 1.1.815 2.22
+            0 1.605-.015 2.9-.015 3.295 0 .32.21.695.825.575A12.01 12.01 0 0024 12c0-6.63-5.37-12-12-12z"
+          />
+        </svg>
+      </a>
+      <!-- Instagram -->
+      <a
+        href="https://instagram.com/yourusername"
+        target="_blank"
+        rel="noopener"
+        aria-label="Instagram"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          viewBox="0 0 24 24"
+        >
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+          <circle cx="12" cy="12" r="5" />
+          <circle cx="17.5" cy="6.5" r="1.5" />
+        </svg>
+      </a>
+      <!-- LinkedIn -->
+      <a
+        href="https://linkedin.com/in/yourusername"
+        target="_blank"
+        rel="noopener"
+        aria-label="LinkedIn"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          viewBox="0 0 24 24"
+        >
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-14h4v2" />
+          <rect x="2" y="9" width="4" height="12" />
+          <circle cx="4" cy="4" r="2" />
+        </svg>
+      </a>
+    </div>
+    <p>© 2025 Mahmoud. All rights reserved.</p>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="to-top" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
